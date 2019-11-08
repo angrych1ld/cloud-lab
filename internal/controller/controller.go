@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-	"internal/hashes"
+	"github.com/tcentric/cloud-lab/internal/hashes"
 	"github.com/gorilla/mux"
 )
 
