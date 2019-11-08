@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: lab
-  namespace: kubectl config view | grep namespace
+  namespace: ktu-stud-angrych1ld
   labels:
     lab: microservices
 spec:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: tcentric/cloud-lab:v0.1 # TODO. Change this to your image from your Docker Hub repo
+          image: angrychild/cloud-lab:sometag2 # TODO. Change this to your image from your Docker Hub repo
           ports:
             - name: http
               containerPort: 8080
